@@ -14,6 +14,7 @@ def visualize_data():
     sns.histplot(referentiel_df["Competence_Count"], kde=True, label="Referentiel", color="orange")
     plt.legend()
     plt.title("Distribution des compétences par module")
-    plt.show()
+    plt.savefig('output/distribution_competences.png')
+    plt.close()
 if __name__ == "__main__":
     visualize_data()

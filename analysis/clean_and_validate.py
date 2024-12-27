@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import ast
 
 # Chemins vers les fichiers
 RAW_DATA_DIR = "data/raw"
