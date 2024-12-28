@@ -128,9 +128,7 @@ function Recommendations({ recommendations }) {
                             <TableRow>
                                 <TableCell>Compétences</TableCell>
                                 <TableCell>
-                                    {Array.isArray(rec.Competences)
-                                        ? rec.Competences.join(", ")
-                                        : "Aucune compétence disponible"}
+                                    {renderContent(rec.Competences, `${index}-Competences`)}
                                 </TableCell>
                             </TableRow>
                             <TableRow>
@@ -140,13 +138,13 @@ function Recommendations({ recommendations }) {
                             <TableRow>
                                 <TableCell>Métiers</TableCell>
                                 <TableCell>
-                                {renderField(rec.Métiers)}
+                                {renderContent(rec.Métiers, `${index}-Métiers`)}
                                 </TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>Secteurs d'activité</TableCell>
                                 <TableCell>
-                                {renderField(rec["Secteurs d’activité"])}
+                                {renderContent(rec["Secteurs d’activité"])}
                                 </TableCell>
                             </TableRow>
                         </Table>

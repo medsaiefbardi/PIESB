@@ -28,9 +28,6 @@ def recommend():
         # Extract keywords from the competence string
         keywords = competence.split()
 
-        # Filter métiers based on matching keywords in the Competences column
-       
-
         print(f"Programs found: {len(program_recommendations)}")
 
         # Return both programs and métiers as a combined response
