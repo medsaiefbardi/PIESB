@@ -1,0 +1,357 @@
+2024-12-26 11:11:04,524 - INFO - Data loaded successfully! Initial shape: (2621, 20)
+2024-12-26 11:11:04,524 - INFO - --- Data Quality Checks ---
+2024-12-26 11:11:04,524 - INFO - Shape of dataset: (2621, 20)
+2024-12-26 11:11:04,525 - INFO - Columns: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'score_final', 'gouvernorat']
+2024-12-26 11:11:04,527 - INFO - Missing values:
+id_et                       0
+date_nais_et                0
+lieu_nais_et                2
+date_bac                  362
+etab_bac                  164
+niveau_diplome_sup_et     362
+lib_specialite_esp_et       0
+date_entree_esp_et       1233
+lib_nature_bac             58
+classe_courante_et          0
+classe_sem1               252
+niveau_courant_et           0
+sexe                        0
+nationalite                 2
+niveau_acces                0
+classe_prec_et            905
+resultat_annee_prec       936
+moy_bac                    99
+score_final                 0
+gouvernorat               446
+dtype: int64
+2024-12-26 11:11:04,532 - INFO - Duplicate rows: 0
+2024-12-26 11:11:04,532 - INFO - --- Dataset Statistics ---
+2024-12-26 11:11:04,549 - INFO -          id_et         date_nais_et lieu_nais_et             date_bac  ...         resultat_annee_prec      moy_bac  score_final gouvernorat
+count     2621                 2621         2619                 2259  ...                        1685  2522.000000  2621.000000        2175
+unique    2621                 1691          561                   43  ...                          33          NaN          NaN          24
+top     ID2621  2002-06-19 00:00:00        Tunis  2022-06-01 00:00:00  ...  ADMIS    Mention Passable           NaN          NaN      Ariana
+freq         1                    7          573                  500  ...                         355          NaN          NaN         632
+mean       NaN                  NaN          NaN                  NaN  ...                         NaN    11.096622    -0.542774         NaN
+std        NaN                  NaN          NaN                  NaN  ...                         NaN     1.884248     5.143817         NaN
+min        NaN                  NaN          NaN                  NaN  ...                         NaN     9.000000    -1.000000         NaN
+25%        NaN                  NaN          NaN                  NaN  ...                         NaN    10.082500    -1.000000         NaN
+50%        NaN                  NaN          NaN                  NaN  ...                         NaN    10.770000    -1.000000         NaN
+75%        NaN                  NaN          NaN                  NaN  ...                         NaN    11.787500    -1.000000         NaN
+max        NaN                  NaN          NaN                  NaN  ...                         NaN    76.350000    75.080000         NaN
+
+[11 rows x 20 columns]
+2024-12-26 11:11:04,876 - INFO - Missing values heatmap saved!
+2024-12-26 11:11:05,129 - INFO - Distribution plot for moy_bac saved!
+2024-12-26 11:11:05,130 - INFO - --- Starting Data Cleaning ---
+2024-12-26 11:11:05,133 - INFO - Removed duplicates. New shape: (2621, 20)
+2024-12-26 11:11:05,142 - INFO - 'score_final' column removed.
+2024-12-26 11:11:05,144 - INFO - Final shape after cleaning: (2457, 19)
+2024-12-26 11:11:05,144 - INFO - Columns retained: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'gouvernorat']
+2024-12-26 11:11:05,163 - INFO - Cleaned data saved successfully to C:\Users\Skander\Desktop\Projet-Etudiant\data\processed\updated_cleaned_data.csv
+2024-12-26 11:11:05,164 - INFO - EDA and Data Preprocessing completed. Outputs saved.
+2024-12-26 16:28:21,656 - INFO - Data loaded successfully! Initial shape: (2621, 20)
+2024-12-26 16:28:21,657 - INFO - --- Data Quality Checks ---
+2024-12-26 16:28:21,657 - INFO - Shape of dataset: (2621, 20)
+2024-12-26 16:28:21,657 - INFO - Columns: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'score_final', 'gouvernorat']
+2024-12-26 16:28:21,658 - INFO - Missing values:
+id_et                       0
+date_nais_et                0
+lieu_nais_et                2
+date_bac                  362
+etab_bac                  164
+niveau_diplome_sup_et     362
+lib_specialite_esp_et       0
+date_entree_esp_et       1233
+lib_nature_bac             58
+classe_courante_et          0
+classe_sem1               252
+niveau_courant_et           0
+sexe                        0
+nationalite                 2
+niveau_acces                0
+classe_prec_et            905
+resultat_annee_prec       936
+moy_bac                    99
+score_final                 0
+gouvernorat               446
+dtype: int64
+2024-12-26 16:28:21,663 - INFO - Duplicate rows: 0
+2024-12-26 16:28:21,663 - INFO - --- Dataset Statistics ---
+2024-12-26 16:28:21,678 - INFO -          id_et         date_nais_et lieu_nais_et             date_bac  ...         resultat_annee_prec      moy_bac  score_final gouvernorat
+count     2621                 2621         2619                 2259  ...                        1685  2522.000000  2621.000000        2175
+unique    2621                 1691          561                   43  ...                          33          NaN          NaN          24
+top     ID2621  2002-06-19 00:00:00        Tunis  2022-06-01 00:00:00  ...  ADMIS    Mention Passable           NaN          NaN      Ariana
+freq         1                    7          573                  500  ...                         355          NaN          NaN         632
+mean       NaN                  NaN          NaN                  NaN  ...                         NaN    11.096622    -0.542774         NaN
+std        NaN                  NaN          NaN                  NaN  ...                         NaN     1.884248     5.143817         NaN
+min        NaN                  NaN          NaN                  NaN  ...                         NaN     9.000000    -1.000000         NaN
+25%        NaN                  NaN          NaN                  NaN  ...                         NaN    10.082500    -1.000000         NaN
+50%        NaN                  NaN          NaN                  NaN  ...                         NaN    10.770000    -1.000000         NaN
+75%        NaN                  NaN          NaN                  NaN  ...                         NaN    11.787500    -1.000000         NaN
+max        NaN                  NaN          NaN                  NaN  ...                         NaN    76.350000    75.080000         NaN
+
+[11 rows x 20 columns]
+2024-12-26 16:28:21,995 - INFO - Missing values heatmap saved!
+2024-12-26 16:28:22,256 - INFO - Distribution plot for moy_bac saved!
+2024-12-26 16:28:22,256 - INFO - --- Starting Data Cleaning ---
+2024-12-26 16:28:22,260 - INFO - Removed duplicates. New shape: (2621, 20)
+2024-12-26 16:28:22,269 - INFO - 'score_final' column removed.
+2024-12-26 16:28:22,271 - INFO - Final shape after cleaning: (2457, 19)
+2024-12-26 16:28:22,271 - INFO - Columns retained: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'gouvernorat']
+2024-12-26 16:28:22,289 - INFO - Cleaned data saved successfully to C:\Users\Skander\Desktop\Projet-Etudiant\data\processed\updated_cleaned_data.csv
+2024-12-26 16:28:22,290 - INFO - EDA and Data Preprocessing completed. Outputs saved.
+2024-12-27 09:07:42,412 - INFO - Data loaded successfully! Initial shape: (2621, 20)
+2024-12-27 09:07:42,413 - INFO - --- Data Quality Checks ---
+2024-12-27 09:07:42,413 - INFO - Shape of dataset: (2621, 20)
+2024-12-27 09:07:42,413 - INFO - Columns: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'score_final', 'gouvernorat']
+2024-12-27 09:07:42,413 - INFO - Missing values:
+id_et                       0
+date_nais_et                0
+lieu_nais_et                2
+date_bac                  362
+etab_bac                  164
+niveau_diplome_sup_et     362
+lib_specialite_esp_et       0
+date_entree_esp_et       1233
+lib_nature_bac             58
+classe_courante_et          0
+classe_sem1               252
+niveau_courant_et           0
+sexe                        0
+nationalite                 2
+niveau_acces                0
+classe_prec_et            905
+resultat_annee_prec       936
+moy_bac                    99
+score_final                 0
+gouvernorat               446
+dtype: int64
+2024-12-27 09:07:42,433 - INFO - Duplicate rows: 0
+2024-12-27 09:07:42,433 - INFO - --- Dataset Statistics ---
+2024-12-27 09:07:42,462 - INFO -          id_et         date_nais_et lieu_nais_et             date_bac etab_bac  ...  classe_prec_et         resultat_annee_prec      moy_bac  score_final gouvernorat
+count     2621                 2621         2619                 2259     2457  ...            1716                        1685  2522.000000  2621.000000        2175
+unique    2621                 1691          561                   43     1578  ...              85                          33          NaN          NaN          24
+top     ID2621  2002-06-19 00:00:00        Tunis  2022-06-01 00:00:00    Tunis  ...         1-LBC-1  ADMIS    Mention Passable           NaN          NaN      Ariana
+freq         1                    7          573                  500      154  ...              34                         355          NaN          NaN         632
+mean       NaN                  NaN          NaN                  NaN      NaN  ...             NaN                         NaN    11.096622    -0.542774         NaN
+std        NaN                  NaN          NaN                  NaN      NaN  ...             NaN                         NaN     1.884248     5.143817         NaN
+min        NaN                  NaN          NaN                  NaN      NaN  ...             NaN                         NaN     9.000000    -1.000000         NaN
+25%        NaN                  NaN          NaN                  NaN      NaN  ...             NaN                         NaN    10.082500    -1.000000         NaN
+50%        NaN                  NaN          NaN                  NaN      NaN  ...             NaN                         NaN    10.770000    -1.000000         NaN
+75%        NaN                  NaN          NaN                  NaN      NaN  ...             NaN                         NaN    11.787500    -1.000000         NaN
+max        NaN                  NaN          NaN                  NaN      NaN  ...             NaN                         NaN    76.350000    75.080000         NaN
+
+[11 rows x 20 columns]
+2024-12-27 09:07:43,200 - INFO - Missing values heatmap saved!
+2024-12-27 09:07:43,639 - INFO - Distribution plot for moy_bac saved!
+2024-12-27 09:07:43,639 - INFO - --- Starting Data Cleaning ---
+2024-12-27 09:07:43,643 - INFO - Removed duplicates. New shape: (2621, 20)
+2024-12-27 09:07:43,663 - INFO - 'score_final' column removed.
+2024-12-27 09:07:43,667 - INFO - Final shape after cleaning: (2457, 19)
+2024-12-27 09:07:43,667 - INFO - Columns retained: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'gouvernorat']
+2024-12-27 09:07:43,714 - INFO - Cleaned data saved successfully to C:\Users\Skander\Desktop\Projet-Etudiant\data\processed\updated_cleaned_data.csv
+2024-12-27 09:07:43,714 - INFO - EDA and Data Preprocessing completed. Outputs saved.
+2024-12-27 16:00:27,005 - INFO - Data loaded successfully! Initial shape: (2621, 20)
+2024-12-27 16:00:27,005 - INFO - --- Data Quality Checks ---
+2024-12-27 16:00:27,005 - INFO - Shape of dataset: (2621, 20)
+2024-12-27 16:00:27,005 - INFO - Columns: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'score_final', 'gouvernorat']
+2024-12-27 16:00:27,007 - INFO - Missing values:
+id_et                       0
+date_nais_et                0
+lieu_nais_et                2
+date_bac                  362
+etab_bac                  164
+niveau_diplome_sup_et     362
+lib_specialite_esp_et       0
+date_entree_esp_et       1233
+lib_nature_bac             58
+classe_courante_et          0
+classe_sem1               252
+niveau_courant_et           0
+sexe                        0
+nationalite                 2
+niveau_acces                0
+classe_prec_et            905
+resultat_annee_prec       936
+moy_bac                    99
+score_final                 0
+gouvernorat               446
+dtype: int64
+2024-12-27 16:00:27,019 - INFO - Duplicate rows: 0
+2024-12-27 16:00:27,019 - INFO - --- Dataset Statistics ---
+2024-12-27 16:00:27,039 - INFO -          id_et         date_nais_et lieu_nais_et  ...      moy_bac  score_final  gouvernorat
+count     2621                 2621         2619  ...  2522.000000  2621.000000         2175
+unique    2621                 1691          561  ...          NaN          NaN           24
+top     ID2621  2002-06-19 00:00:00        Tunis  ...          NaN          NaN       Ariana
+freq         1                    7          573  ...          NaN          NaN          632
+mean       NaN                  NaN          NaN  ...    11.096622    -0.542774          NaN
+std        NaN                  NaN          NaN  ...     1.884248     5.143817          NaN
+min        NaN                  NaN          NaN  ...     9.000000    -1.000000          NaN
+25%        NaN                  NaN          NaN  ...    10.082500    -1.000000          NaN
+50%        NaN                  NaN          NaN  ...    10.770000    -1.000000          NaN
+75%        NaN                  NaN          NaN  ...    11.787500    -1.000000          NaN
+max        NaN                  NaN          NaN  ...    76.350000    75.080000          NaN
+
+[11 rows x 20 columns]
+2024-12-27 16:00:27,496 - INFO - Missing values heatmap saved!
+2024-12-27 16:00:27,752 - INFO - Distribution plot for moy_bac saved!
+2024-12-27 16:00:27,752 - INFO - --- Starting Data Cleaning ---
+2024-12-27 16:00:27,755 - INFO - Removed duplicates. New shape: (2621, 20)
+2024-12-27 16:00:27,765 - INFO - 'score_final' column removed.
+2024-12-27 16:00:27,766 - INFO - Final shape after cleaning: (2457, 19)
+2024-12-27 16:00:27,766 - INFO - Columns retained: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'gouvernorat']
+2024-12-27 16:00:27,787 - INFO - Cleaned data saved successfully to C:\Users\Skander\Desktop\Projet-Etudiant\data\processed\updated_cleaned_data.csv
+2024-12-27 16:00:27,787 - INFO - EDA and Data Preprocessing completed. Outputs saved.
+2024-12-27 18:37:55,247 - INFO - Data loaded successfully! Initial shape: (2621, 20)
+2024-12-27 18:37:55,247 - INFO - --- Data Quality Checks ---
+2024-12-27 18:37:55,247 - INFO - Shape of dataset: (2621, 20)
+2024-12-27 18:37:55,247 - INFO - Columns: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'score_final', 'gouvernorat']
+2024-12-27 18:37:55,249 - INFO - Missing values:
+id_et                       0
+date_nais_et                0
+lieu_nais_et                2
+date_bac                  362
+etab_bac                  164
+niveau_diplome_sup_et     362
+lib_specialite_esp_et       0
+date_entree_esp_et       1233
+lib_nature_bac             58
+classe_courante_et          0
+classe_sem1               252
+niveau_courant_et           0
+sexe                        0
+nationalite                 2
+niveau_acces                0
+classe_prec_et            905
+resultat_annee_prec       936
+moy_bac                    99
+score_final                 0
+gouvernorat               446
+dtype: int64
+2024-12-27 18:37:55,259 - INFO - Duplicate rows: 0
+2024-12-27 18:37:55,259 - INFO - --- Dataset Statistics ---
+2024-12-27 18:37:55,278 - INFO -          id_et         date_nais_et lieu_nais_et  ...      moy_bac  score_final  gouvernorat
+count     2621                 2621         2619  ...  2522.000000  2621.000000         2175
+unique    2621                 1691          561  ...          NaN          NaN           24
+top     ID2621  2002-06-19 00:00:00        Tunis  ...          NaN          NaN       Ariana
+freq         1                    7          573  ...          NaN          NaN          632
+mean       NaN                  NaN          NaN  ...    11.096622    -0.542774          NaN
+std        NaN                  NaN          NaN  ...     1.884248     5.143817          NaN
+min        NaN                  NaN          NaN  ...     9.000000    -1.000000          NaN
+25%        NaN                  NaN          NaN  ...    10.082500    -1.000000          NaN
+50%        NaN                  NaN          NaN  ...    10.770000    -1.000000          NaN
+75%        NaN                  NaN          NaN  ...    11.787500    -1.000000          NaN
+max        NaN                  NaN          NaN  ...    76.350000    75.080000          NaN
+
+[11 rows x 20 columns]
+2024-12-27 18:37:55,797 - INFO - Missing values heatmap saved!
+2024-12-27 18:37:56,042 - INFO - Distribution plot for moy_bac saved!
+2024-12-27 18:37:56,042 - INFO - --- Starting Data Cleaning ---
+2024-12-27 18:37:56,046 - INFO - Removed duplicates. New shape: (2621, 20)
+2024-12-27 18:37:56,056 - INFO - 'score_final' column removed.
+2024-12-27 18:37:56,057 - INFO - Final shape after cleaning: (2457, 19)
+2024-12-27 18:37:56,057 - INFO - Columns retained: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'gouvernorat']
+2024-12-27 18:37:56,082 - INFO - Cleaned data saved successfully to C:\Users\Skander\Desktop\Projet-Etudiant\data\processed\updated_cleaned_data.csv
+2024-12-27 18:37:56,083 - INFO - EDA and Data Preprocessing completed. Outputs saved.
+2024-12-27 19:34:28,934 - INFO - Data loaded successfully! Initial shape: (2621, 20)
+2024-12-27 19:34:28,935 - INFO - --- Data Quality Checks ---
+2024-12-27 19:34:28,935 - INFO - Shape of dataset: (2621, 20)
+2024-12-27 19:34:28,935 - INFO - Columns: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'score_final', 'gouvernorat']
+2024-12-27 19:34:28,936 - INFO - Missing values:
+id_et                       0
+date_nais_et                0
+lieu_nais_et                2
+date_bac                  362
+etab_bac                  164
+niveau_diplome_sup_et     362
+lib_specialite_esp_et       0
+date_entree_esp_et       1233
+lib_nature_bac             58
+classe_courante_et          0
+classe_sem1               252
+niveau_courant_et           0
+sexe                        0
+nationalite                 2
+niveau_acces                0
+classe_prec_et            905
+resultat_annee_prec       936
+moy_bac                    99
+score_final                 0
+gouvernorat               446
+dtype: int64
+2024-12-27 19:34:28,939 - INFO - Duplicate rows: 0
+2024-12-27 19:34:28,939 - INFO - --- Dataset Statistics ---
+2024-12-27 19:34:28,954 - INFO -          id_et         date_nais_et lieu_nais_et  ...      moy_bac  score_final  gouvernorat
+count     2621                 2621         2619  ...  2522.000000  2621.000000         2175
+unique    2621                 1691          561  ...          NaN          NaN           24
+top     ID2621  2002-06-19 00:00:00        Tunis  ...          NaN          NaN       Ariana
+freq         1                    7          573  ...          NaN          NaN          632
+mean       NaN                  NaN          NaN  ...    11.096622    -0.542774          NaN
+std        NaN                  NaN          NaN  ...     1.884248     5.143817          NaN
+min        NaN                  NaN          NaN  ...     9.000000    -1.000000          NaN
+25%        NaN                  NaN          NaN  ...    10.082500    -1.000000          NaN
+50%        NaN                  NaN          NaN  ...    10.770000    -1.000000          NaN
+75%        NaN                  NaN          NaN  ...    11.787500    -1.000000          NaN
+max        NaN                  NaN          NaN  ...    76.350000    75.080000          NaN
+
+[11 rows x 20 columns]
+2024-12-27 19:34:29,259 - INFO - Missing values heatmap saved!
+2024-12-27 19:34:29,507 - INFO - Distribution plot for moy_bac saved!
+2024-12-27 19:34:29,507 - INFO - --- Starting Data Cleaning ---
+2024-12-27 19:34:29,511 - INFO - Removed duplicates. New shape: (2621, 20)
+2024-12-27 19:34:29,518 - INFO - 'score_final' column removed.
+2024-12-27 19:34:29,520 - INFO - Final shape after cleaning: (2457, 19)
+2024-12-27 19:34:29,520 - INFO - Columns retained: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'gouvernorat']
+2024-12-27 19:34:29,537 - INFO - Cleaned data saved successfully to C:\Users\Skander\Desktop\Projet-Etudiant\data\processed\updated_cleaned_data.csv
+2024-12-27 19:34:29,537 - INFO - EDA and Data Preprocessing completed. Outputs saved.
+2024-12-28 03:50:18,131 - INFO - Data loaded successfully! Initial shape: (2621, 20)
+2024-12-28 03:50:18,131 - INFO - --- Data Quality Checks ---
+2024-12-28 03:50:18,131 - INFO - Shape of dataset: (2621, 20)
+2024-12-28 03:50:18,131 - INFO - Columns: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'score_final', 'gouvernorat']
+2024-12-28 03:50:18,132 - INFO - Missing values:
+id_et                       0
+date_nais_et                0
+lieu_nais_et                2
+date_bac                  362
+etab_bac                  164
+niveau_diplome_sup_et     362
+lib_specialite_esp_et       0
+date_entree_esp_et       1233
+lib_nature_bac             58
+classe_courante_et          0
+classe_sem1               252
+niveau_courant_et           0
+sexe                        0
+nationalite                 2
+niveau_acces                0
+classe_prec_et            905
+resultat_annee_prec       936
+moy_bac                    99
+score_final                 0
+gouvernorat               446
+dtype: int64
+2024-12-28 03:50:18,136 - INFO - Duplicate rows: 0
+2024-12-28 03:50:18,136 - INFO - --- Dataset Statistics ---
+2024-12-28 03:50:18,151 - INFO -          id_et         date_nais_et lieu_nais_et  ...      moy_bac  score_final  gouvernorat
+count     2621                 2621         2619  ...  2522.000000  2621.000000         2175
+unique    2621                 1691          561  ...          NaN          NaN           24
+top     ID2621  2002-06-19 00:00:00        Tunis  ...          NaN          NaN       Ariana
+freq         1                    7          573  ...          NaN          NaN          632
+mean       NaN                  NaN          NaN  ...    11.096622    -0.542774          NaN
+std        NaN                  NaN          NaN  ...     1.884248     5.143817          NaN
+min        NaN                  NaN          NaN  ...     9.000000    -1.000000          NaN
+25%        NaN                  NaN          NaN  ...    10.082500    -1.000000          NaN
+50%        NaN                  NaN          NaN  ...    10.770000    -1.000000          NaN
+75%        NaN                  NaN          NaN  ...    11.787500    -1.000000          NaN
+max        NaN                  NaN          NaN  ...    76.350000    75.080000          NaN
+
+[11 rows x 20 columns]
+2024-12-28 03:50:18,473 - INFO - Missing values heatmap saved!
+2024-12-28 03:50:18,723 - INFO - Distribution plot for moy_bac saved!
+2024-12-28 03:50:18,723 - INFO - --- Starting Data Cleaning ---
+2024-12-28 03:50:18,727 - INFO - Removed duplicates. New shape: (2621, 20)
+2024-12-28 03:50:18,734 - INFO - 'score_final' column removed.
+2024-12-28 03:50:18,736 - INFO - Final shape after cleaning: (2457, 19)
+2024-12-28 03:50:18,736 - INFO - Columns retained: ['id_et', 'date_nais_et', 'lieu_nais_et', 'date_bac', 'etab_bac', 'niveau_diplome_sup_et', 'lib_specialite_esp_et', 'date_entree_esp_et', 'lib_nature_bac', 'classe_courante_et', 'classe_sem1', 'niveau_courant_et', 'sexe', 'nationalite', 'niveau_acces', 'classe_prec_et', 'resultat_annee_prec', 'moy_bac', 'gouvernorat']
+2024-12-28 03:50:18,754 - INFO - Cleaned data saved successfully to C:\Users\Skander\Desktop\Projet-Etudiant\data\processed\updated_cleaned_data.csv
+2024-12-28 03:50:18,754 - INFO - EDA and Data Preprocessing completed. Outputs saved.
